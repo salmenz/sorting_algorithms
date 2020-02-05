@@ -53,6 +53,7 @@ void quick(int *array, size_t  low, size_t high, size_t size)
  * @low : first index
  * @high : last index
  * @size : size
+ * Return : id
  */
 size_t partition(int *array, size_t low, size_t high, size_t size)
 {
