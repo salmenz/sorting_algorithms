@@ -18,6 +18,9 @@ struct listint_s *prev;
 struct listint_s *next;
 } listint_t;
 
+size_t  partition(int *array, size_t low, size_t high, size_t size);
+void quick(int *array, size_t low, size_t high, size_t size);
+void swap_val(int *val1, int *val2);
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
