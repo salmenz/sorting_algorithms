@@ -17,6 +17,7 @@ void swap_val(int *val1, int *val2)
  * quick_sort - run the func quick
  * @array : array to be sorted
  * @size : size of the array
+ * Return : nothing
  */
 void quick_sort(int *array, size_t size)
 {
@@ -30,6 +31,7 @@ void quick_sort(int *array, size_t size)
  * @low : first index
  * @high : last index
  * @size : size
+ * Return : nothing
  */
 void quick(int *array, size_t  low, size_t high, size_t size)
 {
@@ -48,11 +50,12 @@ void quick(int *array, size_t  low, size_t high, size_t size)
 		quick(array, pivot_idx + 1, high, size);
 }
 /**
- * partition - make the initial sort
- * @array : array for sorting
- * @low : first index
- * @high : last index
+ * partition - function that make the initial sort
+ * @array : array to sort
+ * @low : first value
+ * @high : last value
  * @size : size
+ * Return : the last idx
  */
 size_t partition(int *array, size_t low, size_t high, size_t size)
 {
